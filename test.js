@@ -22,7 +22,7 @@ function simulate(keys) {
  * cases.
  */
 
-test('assert', function (t) {
+test('throws when missing keys', function (t) {
   process.env.HTTP_LISTEN_PORT = 4242;
 
   var fn = simulate([
@@ -34,3 +34,18 @@ test('assert', function (t) {
 
   t.end();
 });
+
+test('does not throw when all keys exist', function (t) {
+  process.env.HTTP_LISTEN_PORT = 4242;
+  process.env.HTTP_LISTEN_HOST = '0.0.0.0';
+
+  var fn = simulate([
+    'HTTP_LISTEN_PORT',
+    'HTTP_LISTEN_HOST'
+  ]);
+
+  assert.doesNotThrow(fn, ReferenceError);
+
+  t.end();
+});
+
