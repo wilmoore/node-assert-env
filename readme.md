@@ -1,6 +1,6 @@
 # assert-env
 
-[![Build Status](http://img.shields.io/travis/wilmoore/node-assert-env.svg)](https://travis-ci.org/wilmoore/node-assert-env) [![NPM version](http://img.shields.io/npm/v/assert-env.svg)](https://www.npmjs.org/package/assert-env) [![NPM downloads](http://img.shields.io/npm/dm/assert-env.svg)](https://www.npmjs.org/package/assert-env) [![LICENSE](http://img.shields.io/npm/l/assert-env.svg)](LICENSE)
+[![Build Status](http://img.shields.io/travis/wilmoore/node-assert-env.svg)](https://travis-ci.org/wilmoore/node-assert-env) [![NPM version](http://img.shields.io/npm/v/assert-env.svg)](https://www.npmjs.org/package/assert-env) [![NPM downloads](http://img.shields.io/npm/dm/assert-env.svg)](https://www.npmjs.org/package/assert-env) [![LICENSE](http://img.shields.io/npm/l/assert-env.svg)](license)
 
 > Assert that specific environment variables exist.
 
@@ -27,7 +27,7 @@ When one or more keys are missing, a [ReferenceError] is thrown.
 
 ## License
 
-  [MIT](LICENSE)
+  [MIT](license)
 
 [dotenv-assert]: https://www.npmjs.org/package/dotenv-assert
 [assert-dotenv]: https://www.npmjs.org/package/assert-dotenv
