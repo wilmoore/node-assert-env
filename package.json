@@ -8,6 +8,9 @@
   },
   "keywords": [
     "12factor",
+    "env",
+    "envc",
+    "dotenv",
     "assert",
     "assertion",
     "environment",
