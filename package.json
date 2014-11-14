@@ -1,6 +1,6 @@
 {
   "name": "assert-env",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Assert that specific environment variables exist.",
   "main": "index.js",
   "scripts": {
