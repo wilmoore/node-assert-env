@@ -4,8 +4,23 @@
   "description": "Assert that specific environment variables exist.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js | faucet"
+    "test": "tape test.js | faucet",
+    "develop": "rerun-script"
   },
+  "watches": [
+    {
+      "script": "test",
+      "patterns": [
+        "*.js"
+      ]
+    },
+    {
+      "script": "lint",
+      "patterns": [
+        "*.js"
+      ]
+    }
+  ],
   "keywords": [
     "12factor",
     "env",
@@ -27,6 +42,7 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "faucet": "0.0.1",
+    "rerun-script": "^0.4.0",
     "tape": "^3.0.1"
   }
 }
