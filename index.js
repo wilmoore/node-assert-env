@@ -16,7 +16,7 @@ var format = require('util').format;
  * strings.
  */
 
-var message = 'One or more required environment variable(s) are missing: %s!';
+var message = 'Missing required environment variable(s): %s!';
 
 /**
  * Assert that the given keys are found within `process.env`.

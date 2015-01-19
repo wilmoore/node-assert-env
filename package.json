@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape test.js | faucet",
+    "lint": "jshint **.js",
     "develop": "rerun-script"
   },
   "watches": [
@@ -40,8 +41,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^1.10.0",
     "faucet": "0.0.1",
+    "jshint": "^2.5.11",
     "rerun-script": "^0.4.0",
     "tape": "^3.0.1"
   }

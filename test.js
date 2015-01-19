@@ -6,7 +6,6 @@
 
 var test = require('tape');
 var assertEnv = require('./');
-var assert = require('chai').assert;
 
 /*!
  * helpers.
@@ -30,7 +29,7 @@ test('throws when missing keys', function (t) {
     'HTTP_LISTEN_HOST'
   ]);
 
-  assert.throw(fn, ReferenceError, /HTTP_LISTEN_HOST/);
+  t.throws(fn, ReferenceError, /HTTP_LISTEN_HOST/);
 
   t.end();
 });
@@ -44,8 +43,7 @@ test('does not throw when all keys exist', function (t) {
     'HTTP_LISTEN_HOST'
   ]);
 
-  assert.doesNotThrow(fn, ReferenceError);
+  t.doesNotThrow(fn, ReferenceError);
 
   t.end();
 });
-
